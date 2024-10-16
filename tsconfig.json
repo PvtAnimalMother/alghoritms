@@ -1,25 +1,29 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020"],
-    "module": "ESNext",
-    "skipLibCheck": true,
-    "allowImportingTsExtensions": true,
+    "target": "esnext",
+    "lib": ["esnext"],
+    "baseUrl": ".",
+    "outDir": "dist",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "moduleDetection": "force",
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "noFallthroughCasesInSwitch": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "noEmit": true,
     "allowJs": true,
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "newLine": "lf",
+    "noEmit": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "strictNullChecks": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "skipLibCheck": true
   },
-  "include": ["src"],
-  "exclude": ["node_modules"]
+  "include": ["src"]
+  // "exclude": ["dist", "node_modules", "vite.config.ts", "eslint.config.mjs"]
 }
