@@ -1,4 +1,4 @@
-import { CompareFunction } from '@/shared/types/CompareFunction';
+import type { CompareFunction } from '@/shared/types/CompareFunction';
 
 export function quickSort<T>(array: T[], compareFunction: CompareFunction<T>) {
   const sort = (array: T[], start: number, end: number) => {
